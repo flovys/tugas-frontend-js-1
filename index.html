@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Registrasi</title>
+</head>
+<body>
+
+    <h2>Form Registrasi</h2>
+
+    <div>
+        <label for="namaDepan">Nama Depan:</label>
+        <input type="text" id="namaDepan">
+    </div>
+
+    <div>
+        <label for="namaBelakang">Nama Belakang:</label>
+        <input type="text" id="namaBelakang">
+    </div>
+
+    <button id="btnSubmit">Daftar</button>
+
+    <script>
+        document.getElementById('btnSubmit').addEventListener('click', function() {
+            var namaDepan = document.getElementById('namaDepan').value;
+            var namaBelakang = document.getElementById('namaBelakang').value;
+
+            console.log('Nama Lengkap : ' + namaDepan + ' ' + namaBelakang);
+        });
+    </script>
+
+</body>
+</html>
